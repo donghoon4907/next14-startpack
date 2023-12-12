@@ -17,9 +17,9 @@
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
-        "eslint": "^8",
-        "eslint-config-next": "14.0.3",
         "husky": "^8.0.3",
+        "eslint": "^7",
+        "eslint-config-next": "13.0.3",
         "lint-staged": "^15.2.0",
         "prettier": "^2.7.1",
         "typescript": "^5"

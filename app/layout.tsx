@@ -1,8 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans_KR, Int } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const NotoSansKr = Noto_Sans_KR({
+    weight: ['100', '300', '400', '500', '700', '900'],
+    display: 'swap',
+    fallback: [
+        // 디자이너분과 상의한 폴백 폰트
+        '-apple-system',
+        'Malgun Gothic',
+        'Apple SD Gothic Neo',
+        'Roboto',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'sans-serif',
+    ],
+    // preload(글꼴 파일의 크기를 줄이는 등 성능 향상)
+    subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -16,7 +32,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={NotoSansKr.className}>{children}</body>
         </html>
     );
 }
