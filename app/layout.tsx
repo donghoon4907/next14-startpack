@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_KR } from 'next/font/google';
-import './globals.css';
+import '@my/styles/main.scss';
 
 const NotoSansKr = Noto_Sans_KR({
     weight: ['100', '300', '400', '500', '700', '900'],
