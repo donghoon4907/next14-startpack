@@ -1,6 +1,5 @@
-$primary-color: white;
-$secondary-color: black;
+$my-header-height: 56px;
 
 :export {
-    primaryColor: $primary-color;
+    headerHeight: $my-header-height;
 }
